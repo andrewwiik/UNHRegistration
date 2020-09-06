@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Options for UNH Class Registration</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/tags.css">
+</head>
+<body style="min-width: 414px; padding: 20px;">
+	<a class="btn btn-primary" style="width:100%; margin-bottom:10px;" target="_blank" href="https://mycharger.newhaven.edu" role="button">Start Automation</a>
+	<form id="settings" name="settings" action="#!">
+		<div id="statusContainer" style="width: 100%"></div>
+		<div class="form-group">
+		    <label for="username">Username</label>
+		    <input name="username" type="text" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter UNH Username...">
+		    <small id="usernameHelp" class="form-text text-muted">Your UNH Username aka 'awiik1' for the UNH Email 'awiik1@unh.newhaven.edu'</small>
+		</div>
+		<div class="form-group">
+		    <label for="password">Password</label>
+		    <input name="password" type="password" class="form-control" id="password" aria-describedby="passwordHelp" placeholder="Enter UNH Password...">
+		    <small id="passwordHelp" class="form-text text-muted">Your UNH Password used for 'MyCharger'</small>
+		</div>
+		<div class="form-group">
+		    <label for="pin">Registration PIN</label>
+		    <input name="pin" type="number" class="form-control" id="pin" aria-describedby="pinHelp" placeholder="Enter Registration PIN...">
+		    <small id="pinHelp" class="form-text text-muted">Your Registration PIN if you were given one.</small>
+		</div>
+		<div class="form-group">
+		    <label for="crns">CRNs</label>
+		    <select multiple name="crns" data-role="tagsinput" type="text" class="form-control" id="crns" aria-describedby="crnsHelp" placeholder="CRNs..."></select>
+		    <small id="crnsHelp" class="form-text text-muted">The CRNs for the Classes you plan on registering for</small>
+		</div>
+		<!-- <label for="UNH_USERNAME">UNH Username:</label>
+		<br/>
+		<input type="text" id="UNH_USERNAME" name="UNH_USERNAME" placeholder="Your UNH User Name (awiik1)...">
+		<br/>
+		<label for="crns">CRNs:</label>
+		<input type="tags" name="crns" placeholder="Add CRNs here..." id="crns" /> -->
+	</form>
+	<button class="btn btn-primary" style="width: 100%" id="submitSettings">Save</button>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/tags.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+</body>
+</html>
